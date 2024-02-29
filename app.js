@@ -2,15 +2,16 @@ let listaDeNumerosSorteados = [];
 let range = parseInt(prompt('Digite o range a ser adivinhado: '));
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
+
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
 
 function exibirMensagemInicial(){
     exibirTextoNaTela('h1','Jogo do numero secreto');
     exibirTextoNaTela('p',`Escolha um número entre 1 e ${range}`);
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
 
 exibirMensagemInicial()
