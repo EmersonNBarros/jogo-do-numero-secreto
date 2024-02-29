@@ -61,7 +61,13 @@ body::before {
     font-size: 24px;
     font-weight: 700;
     border: none;
-    margin-top: 2rem;
+    margin-top: 2rem;    
+    cursor: pointer;    
+}
+
+.container__botao:hover{
+    background: #175fb8;
+    transition: 0.3s;
 }
 
 .container__texto {
@@ -104,6 +110,7 @@ button {
 .texto__paragrafo {
     font-size: 32px;
     font-weight: 400;
+    text-align: center;
 }
 
 button:disabled {
